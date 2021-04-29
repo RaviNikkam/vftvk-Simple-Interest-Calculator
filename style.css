@@ -3,9 +3,9 @@ h1{color:grey;font-family:verdana}
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
+    width:500px;
     padding:20px;
-    border:25px;
+    border:500px;
     align:center;
 }
 
@@ -13,3 +13,14 @@ h1{color:grey;font-family:verdana}
     background-color:yellow;
 }
 
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}

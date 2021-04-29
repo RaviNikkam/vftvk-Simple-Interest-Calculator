@@ -5,7 +5,7 @@ function compute()
 
     // Code to validate principal input field
     if(!Number.isInteger(principal) && principal <= 0){
-            alert("Please enter positive value greater than zero");
+            alert("Please enter positive value greater than zero.");
             document.getElementById("principal").focus();
             return false;
     }

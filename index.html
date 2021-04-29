@@ -8,14 +8,18 @@
     <body>
         <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" value="10.25" step="0.25">
-        <span id="rate_val"> 
-            10.25%
-        </span>  
-        <br/>
-        No. of Years    <select id="years">
+        <div  class="col-25">Amount</div>
+        <div  class="col-75"><input type="number"  id="principal"></div><br/><br/>
+        <div  class="col-25">Interest Rate</div>
+        <div  class="col-75"><input type="range" onchange="updateRate()" id="rate" min="1" max="20" value="10.25" step="0.25">
+            <span id="rate_val"> 
+                10.25%
+            </span>
+        </div>
+        <br/><br/>
+        <div  class="col-25">No. of Years</div>
+        <div  class="col-75">
+                    <select id="years">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -26,7 +30,9 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                         <option value="10">10</option>
-                        </select>  <br/>
+                    </select>
+        </div>
+        <br/><br/>
         
         <button onclick="compute()">Compute Interest</button>
         <br><br>
